@@ -1,0 +1,23 @@
+# IntelliJ IDEA 관련 파일들
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# 빌드 결과물
+out/
+build/
+
+# Gradle 관련 파일들
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar  # gradle wrapper는 버전 관리를 위해 남겨둡니다
+
+# 로컬 설정 파일 (예: SDK 경로 등)
+local.properties
+
+# 운영체제에서 생성되는 파일들
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
