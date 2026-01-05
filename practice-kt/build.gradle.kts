@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3") // 가장 안정적인 최신 버전 중 하나
     testImplementation(kotlin("test"))
 }
 

@@ -10,6 +10,37 @@ fun main() {
 //    val result = removeDuplicates(array)
 //    println("${array.contentToString()} $result")
 
+//    val nums = intArrayOf(3, 2, 2, 3)
+//    val result = removeElement(nums, 3)
+//    println("${nums.contentToString()} $result")
+
+//    println(strStr("leetcode", "co"))
+}
+
+fun lengthOfLastWord(s: String): Int {
+    val filter = s.split(" ").filter { it.isNotEmpty() }
+    return filter.last().length
+}
+
+fun searchInsert(nums: IntArray, target: Int): Int {
+    val result = nums.indexOfFirst { it >= target }
+    return if( result<0) nums.size else result
+}
+
+fun strStr(haystack: String, needle: String): Int {
+    return haystack.indexOf(needle)
+}
+
+fun removeElement(nums: IntArray, `val`: Int): Int {
+    var arrLength = nums.size
+    var idx = 0;
+    for( i in 0 until nums.size){
+        if(`val` != nums[i])
+            nums[idx++] = nums[i];
+        else
+            arrLength--;
+    }
+    return arrLength
 }
 
 fun removeDuplicates(nums: IntArray): Int {
